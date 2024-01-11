@@ -1,0 +1,64 @@
+.header__search-icon {
+	background-image: url(../assets/icons/search.svg);
+	width: 25px;
+	height: 25px;
+
+}
+
+.header__notification {
+	background-image: url(../assets/icons/bell-badge.svg);
+
+
+}
+
+.header__profile-picture-small, .header__profile-picture {
+	background-image: url(../assets/icons/Profilbillede.jpeg);
+	background-size: cover;
+	border-radius: 50%;
+	
+}
+
+.header__profile-picture-small {
+	width: 45px;
+	height: 45px;
+}
+
+.header__profile-picture {
+	width: 60px;
+	height: 60px;
+}
+
+.nav-link {
+	width: 25px;
+	height: 25px;
+	/* background-image: url(../assets/icons/home.svg); */
+}
+
+.home {
+	background-image: url(../assets/icons/home.svg);
+}
+.profile {
+	background-image: url(../assets/icons/face-man-profile.svg);
+}
+.messages {
+	background-image: url(../assets/icons/message-reply.svg);
+}
+.history {
+	background-image: url(../assets/icons/history.svg);
+}
+.tasks {
+	background-image: url(../assets/icons/task.svg);
+}
+.community {
+	background-image: url(../assets/icons/community.svg);
+}
+.settings {
+	background-image: url(../assets/icons/settings.svg);
+}
+.support {
+	background-image: url(../assets/icons/support.svg);
+}
+.privacy {
+	background-image: url(../assets/icons/privacy.svg);
+}
+

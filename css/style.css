@@ -5,9 +5,8 @@ body {
 
 main {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(autofit, 1fr);
-	gap: 15px;
 }
 
 .header__notification, .nav-link {
@@ -16,10 +15,11 @@ main {
 }
 
 header {
-	background: pink;
 	grid-column: 2 / -1;
 	display: flex;
 	flex-flow: column nowrap;
+	padding: 35px 20px;
+	gap: 20px;
 }
 
 header div {
@@ -27,28 +27,61 @@ header div {
 	flex-flow: row nowrap;
 }
 
+.header__search-field {
+	align-items: center;		
+	gap: 20px;
+}
+
+.header__notification {
+	margin-left: auto;
+}
+
+.header__button-field {
+	gap: 20px;
+	align-items: center;
+}
+
+.header__button-field button {
+	width: 100px;
+	height: 30px;
+	border-radius: 20px;
+	background: var(--color-button);
+	color: white;
+}
+
+.header__button-field button:first-of-type {
+	margin-left: auto;
+}
+
 .header__profile-greet-and-name {
 	display: flex;
 	flex-direction: column;
 }
 
+input {
+	height: 30px;
+	width: 65%;
+	border-radius: 20px;
+	padding: 10px;
+}
+
 nav {
-	background: lightblue;
+	background: #BEA8AA;
 	grid-column: 1 / 2;	
 	grid-row: 1 / 6; 
 	display: grid;
-	grid-template-columns: 1fr 4fr;
+	grid-template-columns: 1fr 2fr;
 	padding: 20px;
+	gap: 40px 0;
 }
 
 article {
-	background: lightgray;
-	grid-column: 2 / 4;
+	background: var(--color-secondary);
+	grid-column: 2 / 5;
 }
 
 aside {
-	background: darkgrey;
-
+	background: var(--color-tercary);
 }
 
 nav, article, aside {

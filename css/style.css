@@ -3,6 +3,11 @@ body {
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h4 {
+	font-weight: 600;
+	font-size: 16px;
+}
+
 main {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -75,13 +80,38 @@ nav {
 	gap: 40px 0;
 }
 
-article {
-	background: var(--color-secondary);
-	grid-column: 2 / 5;
+.main-section {
+	grid-column: 2 / -1;	
+	display: grid;
+	grid-template-columns: 5fr 2fr;
+	
 }
+
+article {
+	background: var(--color-secondary);	
+}
+
+.article__card-conainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.card {
+	background: white;
+	padding: 10px;
+	border-radius: 7px;
+}
+
+.article__card-content {
+	font-size: 12px;
+}
+
 
 aside {
 	background: var(--color-tercary);
+
+
 }
 
 nav, article, aside {

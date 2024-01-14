@@ -147,16 +147,19 @@ aside {
 
 .aside__announcements {
 	padding: 20px;
-	margin-top: 20px
-	box-shadow: ;
+	margin-top: 24px;
+	box-shadow: var(--box-shadow);
 	border-radius: 7px;
 	background: white;	
 }
 
 .aside__announcements div {
 	padding: 10px;
-	border-bottom: 1px solid lightgrey;
 	font-size: 12px;
+}
+
+.aside__announcements div:nth-child(1), .aside__announcements div:nth-child(2) {
+	border-bottom: 1px solid lightgrey;
 }
 
 aside h4 {

@@ -83,8 +83,8 @@ nav {
 	grid-row: 1 / 6; 
 	display: grid;
 	grid-template-columns: 1fr 2fr;
+	grid-template-rows: repeat(17, 1fr);
 	padding: 20px;
-	gap: 40px 0;
 	background: #BEA8AA;
 }
 
@@ -98,6 +98,10 @@ nav {
 article {
 	padding-top: 20px;
 	background: var(--color-secondary);	
+}
+
+article h3 {
+	margin-left: 20px;
 }
 
 .article__card-container {
@@ -141,13 +145,12 @@ article {
 
 aside {
 	background: var(--color-secondary);
-	padding-top: 20px;
 	padding-right: 20px;
+	height: 100%;
 }
 
-.aside__announcements {
+.aside__announcements, .aside__trending {
 	padding: 20px;
-	margin-top: 24px;
 	box-shadow: var(--box-shadow);
 	border-radius: 7px;
 	background: white;	
@@ -164,7 +167,33 @@ aside {
 
 aside h4 {
 	margin-bottom: 20px;
+	margin-top: 30px;
 }
-nav, article, aside {
 
+.aside__trending {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	height: ;
+}
+
+.trending__profile-picture {
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+}
+
+.aside__trending__item {
+	display: flex;
+}
+
+.aside__trending__item div div {
+	display: flex;
+	text-align: start;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.aside__trending__item div:first-child {
+	font-weight: 600;
 }

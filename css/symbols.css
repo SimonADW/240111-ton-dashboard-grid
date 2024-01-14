@@ -12,7 +12,7 @@
 }
 
 .header__profile-picture-small, .header__profile-picture {
-	background-image: url(../assets/icons/Profilbillede.jpeg);
+	background-image: url(../assets/images/Profilbillede.jpeg);
 	background-size: cover;
 	border-radius: 50%;
 	
